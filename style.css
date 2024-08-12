@@ -329,6 +329,10 @@ a:hover {
   object-fit: cover;
 }
 
+.about-icon {
+  cursor: default;
+}
+
 /* EXPERIENCE SECTION */
 
 #experience {
