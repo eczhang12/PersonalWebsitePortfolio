@@ -207,6 +207,13 @@ a:hover {
   gap: 2rem;
 }
 
+#profile-photo {
+  width: 400px;  /* Adjust this to your image size */
+  height: 400px; /* Make sure the width and height are equal */
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image covers the circle area */
+}
+
 /* ICONS */
 
 .icon {
@@ -313,6 +320,13 @@ a:hover {
   height: 400px;
   width: 400px;
   margin: auto 0;
+  justify-content: center;
+}
+
+#about-me-photo {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
 }
 
 /* EXPERIENCE SECTION */
