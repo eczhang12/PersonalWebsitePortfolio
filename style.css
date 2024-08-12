@@ -167,7 +167,7 @@ a:hover {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 100vh;
 }
 
 .section__pic-container {
@@ -352,6 +352,10 @@ a:hover {
   flex-direction: column;
 }
 
+#graduation-year {
+  font-weight: 600;
+}
+
 .article-container {
   display: flex;
   text-align: initial;
@@ -405,7 +409,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 100vh;
 }
 
 .contact-info-upper-container {
@@ -416,6 +420,7 @@ article .icon {
   border-color: rgb(163, 163, 163);
   background: (250, 250, 250);
   margin: 2rem auto;
+  margin-bottom: 15rem;
   padding: 0.5rem;
 }
 
@@ -441,11 +446,31 @@ article .icon {
 
 /* FOOTER SECTION */
 
-footer {
+/* footer {
   height: 26vh;
   margin: 0 1rem;
 }
 
 footer p {
   text-align: center;
+} */
+
+
+/* NEXT AND PREVIOUS */
+
+.navigation {
+  margin-top: 20px;
+}
+
+.nav-buttons {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000; /* Ensures the buttons are above other content */
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
