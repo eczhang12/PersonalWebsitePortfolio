@@ -295,10 +295,8 @@ a:hover {
   border-radius: 2rem;
 }
 
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
+#graduation-year {
+  font-weight: 600;
 }
 
 .details-container {
@@ -337,6 +335,7 @@ a:hover {
 
 #experience {
   position: relative;
+  justify-content: center;
 }
 
 .experience-sub-title {
@@ -352,9 +351,7 @@ a:hover {
   flex-direction: column;
 }
 
-#graduation-year {
-  font-weight: 600;
-}
+
 
 .article-container {
   display: flex;
