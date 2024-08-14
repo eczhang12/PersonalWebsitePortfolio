@@ -351,8 +351,6 @@ a:hover {
   flex-direction: column;
 }
 
-
-
 .article-container {
   display: flex;
   text-align: initial;
@@ -372,6 +370,19 @@ article {
 article .icon {
   cursor: default;
 }
+
+.bullet-list {
+  list-style-type: disc;
+  margin: 0;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.bullet-list li {
+  margin-bottom: 25px;
+}
+
 
 /* PROJECTS SECTION */
 
