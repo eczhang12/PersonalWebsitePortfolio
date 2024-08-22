@@ -336,6 +336,7 @@ a:hover {
 #experience {
   position: relative;
   justify-content: center;
+  height: auto;
 }
 
 .experience-sub-title {
@@ -347,7 +348,12 @@ a:hover {
 
 .experience-details-container {
   display: flex;
-  justify-content: center;
+}
+
+.exp-details {
+  min-width: 300px;
+  flex-wrap: wrap;
+  display: flex;
   flex-direction: column;
 }
 
