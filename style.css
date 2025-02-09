@@ -300,8 +300,8 @@ a:hover {
 }
 
 .details-container {
-  padding: 1.5rem;
-  flex: 1;
+  padding: 2rem;
+  flex: 8;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
