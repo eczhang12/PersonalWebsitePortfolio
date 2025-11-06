@@ -1,7 +1,6 @@
 import StarIcon from "@/assets/icons/star.svg";
 
 const words = [
-    "TODO Fill in words here"
 ];
 
 export const TapeSection = () => {
