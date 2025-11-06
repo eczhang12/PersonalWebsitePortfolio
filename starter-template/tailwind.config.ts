@@ -1,5 +1,5 @@
-
 import type { Config } from "tailwindcss";
+import defaultTheme from "tailwindcss/defaultTheme";
 
 const config: Config = {
   content: [
@@ -9,11 +9,6 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    screens: {
-      sm: "375px",
-      md: "768px",
-      lg: "1200px",
-    },
     container: {
       center: true,
       padding: {
@@ -22,31 +17,36 @@ const config: Config = {
       },
     },
     extend: {
-        fontFamily: {
-            sans: 'var(--font-sans)',
-            serif: 'var(--font-serif)',
+      // If you wanted to customize breakpoints but keep defaults, do it here:
+      screens: {
+        sm: "375px",
+        lg: "1200px",
+      },
+      fontFamily: {
+        sans: ["var(--font-sans)", ...defaultTheme.fontFamily.sans],
+        serif: ["var(--font-serif)", ...defaultTheme.fontFamily.serif],
+      },
+      animation: {
+        "ping-large": "ping-large 1s ease-in-out infinite",
+        "move-left": "move-left 30s linear infinite",
+        "move-right": "move-right 20s linear infinite",
+      },
+      keyframes: {
+        "ping-large": {
+          "75%, 100%": { transform: "scale(3)", opacity: "0" },
         },
-        animation: {
-            'ping-large': "ping-large 1s ease-in-out infinite"
+        "move-left": {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
         },
-        keyframes: {
-            'ping-large': {
-                '75%, 100%': {
-                    transform: 'scale(3)',
-                    opacity: '0',
-                }
-            },
-            "move-left": {
-                '0%': { transform: 'translateX(0%)' },
-                '100%': { transform: 'translateX(-50%)' },
-            },
-            "move-right": {
-                '0%': { transform: 'translateX(-50%)' },
-                '100%': { transform: 'translateX(0%)' },
-            },
-        }
+        "move-right": {
+          "0%": { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
+      },
     },
   },
   plugins: [],
 };
+
 export default config;

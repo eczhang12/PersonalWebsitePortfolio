@@ -85,8 +85,8 @@ export const AboutSection = () => {
                     </Card>
                     <Card className="h-[320px] md:col-span-3 lg:col-span-2">
                         <CardHeader className = "px-6 pt-6" title="My Toolbox" description="My tools for skills and stuff" />
-                        <ToolboxItems items={toolboxItems} className="mt-6" />
-                        <ToolboxItems items={toolboxItems} className="mt-6" itemsWrapperClassName="-translate-x-1/2" />
+                        <ToolboxItems items={toolboxItems} className="mt-6" itemsWrapperClassName="animate-move-left [animation-duration:30s]"/>
+                        <ToolboxItems items={toolboxItems} className="mt-6" itemsWrapperClassName="animate-move-right [animation-duration:20s]" />
                     </Card>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-8 lg:grid-cols-3">
