@@ -6,6 +6,8 @@ import StarIcon from "@/assets/icons/star.svg";
 import { HeroOrbit } from "@/components/HeroOrbit";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
 
+import Link from "next/link";
+
 export const HeroSection = () => {
   return (
     <div className="relative py-32 md:py-48 lg:py-60 z-0 overflow-x-clip">
@@ -81,22 +83,29 @@ export const HeroSection = () => {
 
         <div className="mx-auto max-w-lg">
           <h1 className="mt-8 text-center font-serif text-3xl tracking-wide md:text-5xl">
-            Building Exceptional User Experiences
+            Building Intelligent Software That Makes an Impact
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
-            TODO Talking about something
+            Actively seeking software engineering internships — passionate about AI, systems, and building meaningful products.
           </p>
         </div>
 
-        <div className="mt-8 flex flex-col items-center justify-center gap-4 md:flex-row">
-          <button className="inline-flex h-12 items-center gap-2 rounded-xl border border-white/15 px-6">
+        <div className="mt-8 flex flex-col items-center justify-center gap-4 md:flex-row relative z-20">
+          <Link
+            href="#projects"
+            className="inline-flex h-12 items-center gap-2 rounded-xl border border-white/15 px-6 cursor-pointer"
+          >
             <span className="font-semibold">Explore My Work</span>
             <ArrowDown className="size-4" />
-          </button>
-          <button className="inline-flex h-12 items-center gap-2 rounded-xl border border-white bg-white px-6 text-gray-900">
+          </Link>
+
+          <Link
+            href="#contact"
+            className="inline-flex h-12 items-center gap-2 rounded-xl border border-white bg-white px-6 text-gray-900 cursor-pointer"
+          >
             <span>👋</span>
-            <span className="font-semibold">Let&apos;s Connect</span>
-          </button>
+            <span className="font-semibold">Let’s Connect</span>
+          </Link>
         </div>
       </div>
     </div>
